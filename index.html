@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/styles/style.css">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    
+    <title>Document</title>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap');
+  </style>
+  <body>
+
+    <main class="wrapper">
+      <h1>Feedback form</h1>
+      <form class="inner">
+
+        <fieldset class="sections">
+          <legend>Personal data</legend>
+          <label class="items">
+            Name
+            <input type="text" name="username" />
+          </label>
+          <label class="items">
+            email
+            <input type="email" name="email" />
+          </label>
+          <label class="items">
+            Date of birdth
+            <input type="date" name="birdth date" />
+          </label>
+        </fieldset>
+
+        <fieldset class="sections">
+          <legend>Gender</legend>
+          <label>
+            <input type="radio" value="male" name="Gender" />
+            Male
+          </label>
+          <label>
+            <input type="radio" value="female" name="Gender" />
+            Female
+          </label>
+          <label>
+            <input type="radio" value="nonbinary" name="Gender" />
+            Nonbinary
+          </label>
+        </fieldset>
+
+        <fieldset class="sections">
+          <legend>Additional settings</legend>
+          <label>
+            <input type="checkbox" />
+          Subscribe to news
+          </label>
+          
+        </fieldset>
+
+        <fieldset class="sections">
+          <legend>Choose category</legend>
+          <select name="Technologies">
+            <optgroup label="Technologies">
+              <option value="Programing">Programing</option>
+              <option value="Network">Network</option>
+            </optgroup>
+          </select>
+            <select name="Music">
+            <optgroup label="Music">
+              <option value="Rock">Rock</option>
+              <option value="Pop">Pop</option>
+            </optgroup>
+          </select>
+        </fieldset>
+
+        <fieldset class="sections">
+          <legend>How did you find us</legend>
+          <label>
+            <input type="radio" value="Search enfines" name="find" />
+          Search engines
+          </label>
+          <label>
+            <input type="radio" value="Social media" name="find" />
+          Social media
+          </label>
+          <label>
+            <input type="radio" value="Friend advice" name="find" />
+          Friend advice
+          </label>
+        </fieldset>
+
+        <fieldset class="sections">
+          <legend>Your impressions</legend>
+          <textarea name="Review" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <button type="submit">Send form</button>
+        
+      </form>
+    </main>
+  </body>
 </html>

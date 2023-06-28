@@ -1,0 +1,30 @@
+body{
+  font-family: 'Shantell Sans', cursive;
+  line-height: 0.8em;
+}
+
+h1{
+  text-align: center;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.inner{
+  margin: auto;
+  width: 350px;
+display: flex;
+flex-direction: column;
+  
+}
+
+.sections{
+  
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
