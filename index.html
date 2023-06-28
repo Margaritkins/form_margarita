@@ -4,18 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    
+
     <title>Document</title>
   </head>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap");
   </style>
   <body>
-
     <main class="wrapper">
       <h1>Feedback form</h1>
       <form class="inner">
-
         <fieldset class="sections">
           <legend>Personal data</legend>
           <label class="items">
@@ -34,15 +32,15 @@
 
         <fieldset class="sections">
           <legend>Gender</legend>
-          <label>
+          <label class="items">
             <input type="radio" value="male" name="Gender" />
             Male
           </label>
-          <label>
+          <label class="items">
             <input type="radio" value="female" name="Gender" />
             Female
           </label>
-          <label>
+          <label class="items">
             <input type="radio" value="nonbinary" name="Gender" />
             Nonbinary
           </label>
@@ -50,22 +48,21 @@
 
         <fieldset class="sections">
           <legend>Additional settings</legend>
-          <label>
-            <input type="checkbox" />
-          Subscribe to news
+          <label class="items">
+            <input type="checkbox" name="Subscribe" />
+            Subscribe to news
           </label>
-          
         </fieldset>
 
         <fieldset class="sections">
           <legend>Choose category</legend>
-          <select name="Technologies">
+          <select  class="items" name="Categories">
             <optgroup label="Technologies">
               <option value="Programing">Programing</option>
               <option value="Network">Network</option>
             </optgroup>
           </select>
-            <select name="Music">
+          <select class="items" name="Music">
             <optgroup label="Music">
               <option value="Rock">Rock</option>
               <option value="Pop">Pop</option>
@@ -75,27 +72,26 @@
 
         <fieldset class="sections">
           <legend>How did you find us</legend>
-          <label>
+          <label class="items">
             <input type="radio" value="Search enfines" name="find" />
-          Search engines
+            Search engines
           </label>
-          <label>
+          <label class="items">
             <input type="radio" value="Social media" name="find" />
-          Social media
+            Social media
           </label>
-          <label>
+          <label class="items">
             <input type="radio" value="Friend advice" name="find" />
-          Friend advice
+            Friend advice
           </label>
         </fieldset>
 
         <fieldset class="sections">
           <legend>Your impressions</legend>
-          <textarea name="Review" cols="30" rows="10"></textarea>
+          <textarea class="items" name="Review" cols="30" rows="5"></textarea>
         </fieldset>
 
         <button type="submit">Send form</button>
-        
       </form>
     </main>
   </body>
